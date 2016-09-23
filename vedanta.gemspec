@@ -1,11 +1,10 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'vedanta/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "vedanta"
-  spec.version       = Vedanta::VERSION
+  spec.name          = "orders"
+  spec.version       = 1
   spec.authors       = ["frantisek.gloser@gmail.com"]
   spec.email         = ["frantisek.gloser@gmail.com"]
 
