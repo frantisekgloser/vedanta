@@ -5,3 +5,4 @@ gemspec
 gem 'grape'
 gem 'rack'
 gem 'rspec'
+gem 'pry'
