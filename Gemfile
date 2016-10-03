@@ -5,6 +5,7 @@ gemspec
 gem 'grape'
 gem 'rack'
 gem 'rspec'
+gem 'rack-test'
 gem 'pry'
 #gem 'rails'
 #gem 'bootstrap-sass'
