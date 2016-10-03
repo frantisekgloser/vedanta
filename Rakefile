@@ -1,4 +1,5 @@
 require "bundler/gem_tasks"
+require './app/api/orders/orders.rb'
 
 task :default => :spec
 
