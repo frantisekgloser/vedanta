@@ -17,13 +17,23 @@
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 
+require 'pry'
+require 'rack/test'
+
+require_relative '../app/api/orders/orders'
+
 RSpec.configure do |config|
+  config.include Rack::Test::Methods
+
+  def app
+    API::Orders
+  end
 
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
   # assertions if you prefer.
   config.expect_with :rspec do |expectations|
-  
+
     # This option will default to `true` in RSpec 4. It makes the `description`
     # and `failure_message` of custom matchers include text for helper methods
     # defined using `chain`, e.g.:
